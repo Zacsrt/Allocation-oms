@@ -1,3 +1,44 @@
+# Salmon Allocation System
+
+A web-based dashboard for managing salmon order allocation
+
+## Live Demo
+
+🔗 https://allocation-oms.vercel.app/
+
+## Features
+
+- Automatic order allocation based on business priority rules
+- Allocation preview before confirmation
+- Manual allocation adjustment
+- Inventory validation
+- Customer credit validation
+- Order search and filtering
+- Inventory management dashboard
+- Customer credit overview
+
+## Allocation Rules
+
+1. Priority Order:
+   Emergency > Overdue > Daily
+
+2. If priorities are equal:
+   FIFO (First In, First Out)
+
+3. Customer credit validation is required.
+
+4. If Warehouse ID and Supplier ID are "000",
+   inventory with the highest available stock will be selected.
+
+## Tech Stack
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Faker.js (Mock Data)
+- Vercel
+
 ## Future Improvements
 
 ### UI and System Enhancements
